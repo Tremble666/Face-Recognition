@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+<meta name="description" content="">
+<meta name="author" content="">
+<!-- 新 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet"
+	href="/Bootstrap/cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+<link rel="stylesheet"
+	href="/Bootstrap/cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="/Bootstrap/cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script
+	src="/Bootstrap/cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<link rel="stylesheet"
+	href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script
+	src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet"
+	href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script
+	src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script>
+	$(function() {
+		$("[data-toggle='popover']").popover();
+	});
+</script>
+
+	<meta charset="utf-8"> 
+	<title>欢迎来到人脸识别器个人信息完善页面</title>
+	
+</head>
+<style>
+    center {
+        position: absolute;
+        top: 50%;
+         left: 50%;
+       -ms-transform: translate(-50%,-50%);
+         -moz-transform: translate(-50%,-50%);
+         -o-transform: translate(-50%,-50%);
+         transform: translate(-50%,-50%); 
+     }
+</style>
+<body>
+<form action="" method="get"><!-- 服务器的接口-->
+  <nav class="navbar navbar-inverse">
+	<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed"
+					data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><img style="margin-top: -3px"
+					width="25px" height="25px" src="tecnology.png"></a> <a
+					class="navbar-brand" href="#">Face Recognition</a>
+			</div>	
+			<div class="collapse navbar-collapse"
+				id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li class="dropdown"><a href="#" class="dropdown-toggle"
+						data-toggle="dropdown" role="button" aria-haspopup="true"
+						aria-expanded="false">Dropdown <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else here</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">Separated link</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">One more separated link</a></li>
+						</ul></li>
+				</ul>
+				
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">Logon</a></li>
+					<li><a href="/facerecognition?cmd=regist">Register</a></li>
+				</ul>
+			</div>
+	</div>
+  </nav>
+</form>
+<div style="background-color: white; margin-top: -50px;"
+		class="jumbotron" align="center">
+		<h2 style="font-size: 40px;">
+			<img style="margin-top: -10px" width="30px" height="30px"
+				src="欢迎.png">&nbsp;&nbsp; <b>Welcome to Face Recognition!</b>
+		</h2>
+		<p>您需要完善您的个人信息并上传您的十张个人照片才能使用所有功能</p>
+		
+	</div>
+<form class="form-horizontal" role="form">
+	<div class="form-group" >
+		<label for="firstname" class="col-sm-2 control-label">真实姓名</label>
+		<div class="col-sm-10">
+		<input type="text" class="form-control" id="name"  placeholder="请输入您的真实姓名" required="required" style="width:800px" >
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="firstname" class="col-sm-2 control-label">年龄</label>
+		<div class="col-sm-10">
+		<input type="text" class="form-control" id="name"  placeholder="请输入您的年龄" required="required" style="width:800px">
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="firstname" class="col-sm-2 control-label">性别</label>
+		<div class="col-sm-10">
+		<input type="text" class="form-control" id="name"  placeholder="请输入您的性别" required="required" style="width:800px">
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="firstname" class="col-sm-2 control-label">职业</label>
+		<div class="col-sm-10">
+		<input type="text" class="form-control" id="name"  placeholder="请输入您的职业" required="required" style="width:800px">
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="firstname" class="col-sm-2 control-label"></label>
+		<input type="file" id="input" name="input" multiple="multiple" />
+		</div>
+
+	<div class="form-group">
+		<div class="col-sm-offset-2 col-sm-10">
+				
+				<input type="submit" class="btn btn-success"value="提交" />
+		</div>
+	</div>
+
+</form>
